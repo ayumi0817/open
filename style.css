@@ -226,7 +226,7 @@ background-color:transparent;
     background-position: bottom;
     background-size: auto;
     height: 549px;
-    width: 100%;
+    width: 97.5vw;
 }
 
 #Flexbox2{
@@ -234,12 +234,13 @@ background-color:transparent;
     background-repeat: no-repeat;
     background-position: bottom;
 
-    height: 78vh;
     display: block;
-    width: 100%;
+    width: 97.5vw;
     z-index:18;
     position: relative;
     margin-top: 50px;
+    padding-bottom: 4vh;
+
 }
 
 #Intro{
@@ -266,7 +267,12 @@ background-color:transparent;
     margin-right: auto;
 }
 
+.white1, .white2{
+    width: 40vw;
+    z-index: 20;
+    margin-top: -35%;
 
+}
 
 /*全体の構成調整*/
 
@@ -307,22 +313,14 @@ background-color:transparent;
     width: 50%;
 }
 
-.moji3{
-    z-index: 24;
-
-    margin-bottom: 10%;
+.moji3, .moji30{
+    position: relative;
+    z-index: 30;
     font-size: 1.5vw;
     width: 80%;
-    margin-left: 10%;
-}
+    margin-top: 10%;
+    margin-left: 12%;
 
-.moji30{
-    z-index: 24;
-
-    margin-bottom: 10%;
-    font-size: 1.5vw;
-    width: 80%;
-    margin-left: 5%;
 }
 
 #moji4{
@@ -348,14 +346,12 @@ background-color:transparent;
         margin-left: 12%;
 }
 
-.moji000{
-    margin-top: 20%;
+.moji000, .moji0000{
+    position: relative;
+    z-index: 30;
+    margin-left: 5%;
 }
 
-.moji0000{
-    margin-top: 20%;
-    margin-left: 7%;
-}
 
 #moji0000{
     margin-left: 5%;
@@ -421,10 +417,11 @@ background-color:transparent;
 }
 
 .image10{
-    width: 50%;
+    width: 40%;
     z-index: 25;
     position: absolute;
-        margin-left: 120px;
+        margin-left: 30%;
+        margin-top: 10%;
 
 }
 
@@ -690,7 +687,8 @@ background-color:transparent;
     width: 100%;
     z-index:18;
     position: relative;
-    margin-top: 50px;
+    margin-top: -0.5%;
+
 }
 
 #Intro{
@@ -719,6 +717,18 @@ background-color:transparent;
     margin-right: auto;
 }
 
+.white1 {
+    margin-left: 100px;
+    width:50vw;
+    
+}
+
+.white2{
+    margin-left: 100px;
+    width:50vw;
+
+
+}
 
 
 /*全体の構成調整*/
