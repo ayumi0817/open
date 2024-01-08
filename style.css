@@ -267,12 +267,7 @@ background-color:transparent;
     margin-right: auto;
 }
 
-.white1, .white2{
-    width: 40vw;
-    z-index: 20;
-    margin-top: -35%;
 
-}
 
 /*全体の構成調整*/
 
@@ -284,6 +279,10 @@ background-color:transparent;
 #Flexbox2{
     display: flex;
     justify-content: space-around;
+}
+
+#content, #Hellow{
+    position: relative;
 }
 
 #About, #Safe{
@@ -313,14 +312,26 @@ background-color:transparent;
     width: 50%;
 }
 
-.moji3, .moji30{
-    position: relative;
-    z-index: 30;
-    font-size: 1.5vw;
-    width: 80%;
-    margin-top: 10%;
-    margin-left: 12%;
 
+
+span> .moji30{
+    position: absolute;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 1.5vw;
+}
+
+span> .moji3{
+    position: absolute;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 1.5vw;
 }
 
 #moji4{
@@ -346,17 +357,34 @@ background-color:transparent;
         margin-left: 12%;
 }
 
-.moji000, .moji0000{
-    position: relative;
+ span > .kan2{
+    position: absolute;
+    display: block;
     z-index: 30;
-    margin-left: 5%;
 }
 
+ span > .kan2{
+    position: absolute;
+    display: block;
+    z-index: 30;
+}
 
-#moji0000{
-    margin-left: 5%;
-    padding-top: 1%;
-    z-index: 10;
+#content > .white1{
+    width: 30vw;
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 0;
+    z-index: 20;
+}
+
+#Hellow > .white2{
+    width: 30vw;
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 0;
+    z-index: 20;
 }
 
 .eng{
@@ -417,13 +445,10 @@ background-color:transparent;
 }
 
 .image10{
-    width: 40%;
-    z-index: 25;
-    position: absolute;
-        margin-left: 30%;
-        margin-top: 10%;
-
+    width: 15vw;
+    margin-left: 5%;
 }
+
 
 .image10-1{
     width: 200px;
@@ -443,9 +468,7 @@ background-color:transparent;
     margin-bottom: 50px;
 }
 
-#content, #Hellow{
-    margin-top: 20px;
-}
+
 
 .move{
     position: relative;
@@ -724,8 +747,6 @@ background-color:transparent;
 }
 
 .white2{
-    margin-left: 100px;
-    width:50vw;
 
 
 }
@@ -811,19 +832,16 @@ background-color:transparent;
 
 
 .moji0000{
-    margin-top: 15px;
-    margin-left: 25%;
+
 }
 
 .moji000{
    
-    margin-left: 25%;
+
 }
 
 #moji0000{
-    margin-left: 5%;
-    padding-top: 1%;
-    z-index: 10;
+
 }
 
 .eng{
@@ -884,17 +902,12 @@ background-color:transparent;
 }
 
 .image10{
-    width: 30%;
-    z-index: 25;
-    margin-left: 35%;
+
 
 }
 
 .image10-1{
-    width: 120px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
 }
 
 /*各ボックスの位置調整*/
@@ -960,6 +973,9 @@ background-color:transparent;
     text-align: center;
     margin-top: 50px;
     font-size: 6vw;
+    margin-left: 50px;
+    margin-right: 50px;
+
 }
 
 #content3{
@@ -971,8 +987,8 @@ background-color:transparent;
 }
 
 #name{
-    text-align: right;
-    margin-right: 5%;
+    text-align: r_ight;
+    margin-right: 8%;
     margin-bottom: 200px;
     font-size: 4vw;
 }
