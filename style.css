@@ -1,3 +1,4 @@
+
 /* PC、スマホ共通スタイル */
 body {
     font-family: "游ゴシック","Hiragino Kaku Gothic ProN", "Meiryo","Source Sans Pro",   Arial,sans-serif;
@@ -182,7 +183,7 @@ transform: translateX(0);
 .menu ul li a:hover{
 background-color:transparent;
 }
-}
+
 
 
     /* フッターのリンクの装飾設定 */
@@ -236,9 +237,11 @@ background-color:transparent;
 
     display: block;
     width: 97.5vw;
+    height: 50vh;
     z-index:18;
-    position: relative;
-    margin-top: 50px;
+
+    margin-top: 80px;
+    margin-bottom: 50px;
     padding-bottom: 4vh;
 
 }
@@ -267,6 +270,17 @@ background-color:transparent;
     margin-right: auto;
 }
 
+#Hellow, #content{
+    background-image: url('image/image6-3.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
+    width: 40%;
+    height: 45vh;
+    z-index:19;
+    display: block;
+    margin-top: 30px;
+}
 
 
 /*全体の構成調整*/
@@ -285,6 +299,29 @@ background-color:transparent;
     position: relative;
 }
 
+.white1, .white2{
+    width: 30vw;
+    display: block;
+    z-index: 20;
+    margin-top: 100px;
+}
+
+.move{
+    position: absolute;
+    display: block;
+    z-index: 32;
+    margin-left: 5%;
+}
+
+
+
+
+.image10{
+    width: 15vw;
+    margin-left: 8vw;
+    margin-top: 10px;
+}
+
 #About, #Safe{
     width: 100%;
     position: relative;
@@ -292,7 +329,7 @@ background-color:transparent;
 
 /*文字の装飾*/
 #moji1, #moji2{
-    font-size: 1.5vw;
+    font-size: 1.2rem;
     z-index: 10;
 }
 
@@ -314,31 +351,19 @@ background-color:transparent;
 
 
 
-span> .moji30{
-    position: absolute;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-size: 1.5vw;
-}
 
-span> .moji3{
-    position: absolute;
+.moji30,.moji3{
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-size: 1.5vw;
+    margin-left: 8%;
+    width: 30vw;
+    font-size: 1.2rem;
 }
 
 #moji4{
     margin-top: 0px;
     text-align: center;
     z-index: 11;
-    font-size: 1.5vw;
+    font-size: 1.2rem;
 }
 
 .moji00{
@@ -357,35 +382,10 @@ span> .moji3{
         margin-left: 12%;
 }
 
- span > .kan2{
-    position: absolute;
-    display: block;
-    z-index: 30;
-}
 
- span > .kan2{
-    position: absolute;
-    display: block;
-    z-index: 30;
-}
 
-#content > .white1{
-    width: 30vw;
-    position: absolute;
-    top: 20px;
-    bottom: 20px;
-    left: 0;
-    z-index: 20;
-}
 
-#Hellow > .white2{
-    width: 30vw;
-    position: absolute;
-    top: 20px;
-    bottom: 20px;
-    left: 0;
-    z-index: 20;
-}
+
 
 .eng{
     margin-top: 0px;
@@ -395,14 +395,21 @@ span> .moji3{
     color: #2710d5;
     font-weight: bold;
     font-size: 1.5vw;
+    z-index: 40;
 }
 
 .kan{
     margin-bottom: 0px;
     padding-bottom: 0px;
     font-size: 2vw;
+    z-index: 40;
 }
 
+#moji0000{
+    padding-top: 20px;
+    padding-left: 50px;
+ 
+}
 /*画像の大きさ・位置調整*/
 
 #image2{
@@ -444,10 +451,7 @@ span> .moji3{
     margin-left: 20px;
 }
 
-.image10{
-    width: 15vw;
-    margin-left: 5%;
-}
+
 
 
 .image10-1{
@@ -469,10 +473,6 @@ span> .moji3{
 }
 
 
-
-.move{
-    position: relative;
-}
 
 .side{
     margin-left: 5%;
@@ -612,13 +612,15 @@ span> .moji3{
     opacity: 0;
     transform: translate(0, 100px);
     transition: opacity 1s ease-out, transform 1s ease-out;
+    z-index: 18;
 }
 
 #About.active, #Safe.active, #Flexbox2.active {
     opacity: 1;
     transform: translate(0, 0);
+    z-index: 18;
 }
-
+}
 
 
 
@@ -698,6 +700,7 @@ span> .moji3{
     display: block;
     width: 100%;
     height: 180px;
+    z-index: 21;
 }
 
 #Flexbox2{
@@ -705,24 +708,24 @@ span> .moji3{
     background-repeat: no-repeat;
     background-position: bottom;
 
-    height: 304px;
+    height: 65vh;
     display: block;
     width: 100%;
     z-index:18;
-    position: relative;
-    margin-top: -0.5%;
+    margin-top: 5%;
 
 }
 
 #Intro{
-    width:60%;
+    width:80%;
     display: block;
     margin: 0px auto;
-    font-size: 2.2vw;
+    font-size: 3.3vw;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 50px;
+    padding-top: 38px;
     text-align: center;
+    z-index: 22;
 }
 
 
@@ -732,23 +735,51 @@ span> .moji3{
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: auto;
-    height: 120px;
+    height: 40vh;
     width: 80%;
     z-index:16;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
-.white1 {
-    margin-left: 100px;
-    width:50vw;
-    
+#Hellow, #content{
+    background-image: url('image/image6-2.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
+
+    z-index:19;
+    display: block;
+    padding-top: -20px;
+    margin-bottom: 0px;
+
+
 }
 
-.white2{
+#About{
+    background-image: url('image/image40.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
+    z-index: 20;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40vh;
+}
 
-
+#Safe{
+    background-image: url('image/image41.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto;
+    z-index: 20;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40vh;
 }
 
 
@@ -761,122 +792,95 @@ span> .moji3{
     flex-direction: column;
 }
 
-#About, #Safe{
-    width: 100%;
-    position: relative;
-}
+
 
 /*文字の装飾*/
 #moji1, #moji2{
-    font-size: 2.2vw;
-    z-index: 10;
+    font-size: 3vw;
+    z-index: 30;
 }
 
 #moji1{
-    position: absolute;
-        margin-top: -22%;
-        display: block;
-        margin-left: 12%;
-    width: 40%;
+    padding-left: 30px;
+    width: 80vw;
 }
 
 #moji2{
-    position: absolute;
-    margin-top: -18%;
-    display: block;
-    margin-left: 12%;
-    width: 60%;
+    padding-left: 30px;
+    width: 80vw;
 }
 
-.moji3{
-    z-index: 24;
 
-    font-size: 2vw;
-    width: 40%;
-    margin-left: 30%;
-    margin-bottom: 2%;
-}
-
-.moji30{
-    z-index: 24;
-
-    font-size: 2vw;
-    width: 40%;
-    margin-left: 30%;
-    
-}
 
 #moji4{
     margin-top: 0px;
     text-align: center;
     z-index: 11;
-    font-size: 2vw;
+    font-size: 0.8rem;
+    padding-left: 30PX;
+    padding-right: 30PX;
 }
 
 .moji00{
-    z-index: 23;
-    position: absolute;
-        margin-top: -31%;
-        display: block;
-        margin-left: 8%;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
 .moji0{
-    z-index: 23;
-    position: absolute;
-        margin-top: -29%;
-        display: block;
-        margin-left: 8%;
-}
-
-
-
-.moji0000{
-
-}
-
-.moji000{
-   
+    padding-top: 10px;
+    padding-left: 20px;
 
 }
 
 #moji0000{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
 
 }
 
+.moji30,.moji3{
+    font-size: 3vw;
+}
+
+.move{
+    margin-left: 20%;
+    width: 60vw;
+    padding-top: 5px;
+}
+
+
+
 .eng{
-    margin-top: 0px;
+    margin-top: -5px;
     margin-bottom: 0px;
     padding-top: 0px;
     padding-bottom: 0px;
     color: #2710d5;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 0.8rem;
 }
 
 .kan{
+    margin-top: 0px;
     margin-bottom: 0px;
+    padding-top: 0px;
     padding-bottom: 0px;
-    font-size: 2.5vw;
+    font-size: 1.0rem;
 }
+
+
 
 /*画像の大きさ・位置調整*/
 
 #image2{
-    width: 95%;
-    z-index: 11;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    display: none;
 }
 
+
+
 #image3{
-    width: 95%;
-    z-index: 11;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
+    display: none;
 }
 
 #image4{
@@ -902,19 +906,18 @@ span> .moji3{
 }
 
 .image10{
-
-
+    width: 30vw;
+    margin-left: 20%;
+    
 }
 
 .image10-1{
-
+    width: 8rem;
+    margin-left: 27%;
 }
 
 /*各ボックスの位置調整*/
-#About{
-    margin-top: 50px;
-    position: relative;
-}
+
 
 #Ask{
     margin-top: 50px;
@@ -925,9 +928,6 @@ span> .moji3{
     margin-top: 20px;
 }
 
-.move{
-    position: relative;
-}
 
 .side{
     margin-left: 5%;
@@ -939,7 +939,7 @@ span> .moji3{
 }
 
 .tableheader-first, .tableheader{
-    font-size: 3vw;
+    font-size: 3.5vw;
     text-align: left;
     padding: 5px;
     border-bottom-color: #2710d5;
@@ -953,7 +953,7 @@ span> .moji3{
     border-bottom-color: #ececec;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    font-size: 3vw;
+    font-size: 3.5vw;
 }
 
 #content2{
@@ -963,6 +963,8 @@ span> .moji3{
 #map{
     padding-top: 30px;
     padding-bottom: 30px;
+    width: 100%;
+    height: 30%;
 }
 /*代表挨拶*/
 #content1{
@@ -983,11 +985,11 @@ span> .moji3{
     margin-left: 50px;
     margin-right: 50px;
     width: auto;
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 #name{
-    text-align: r_ight;
+    text-align: right;
     margin-right: 8%;
     margin-bottom: 200px;
     font-size: 4vw;
@@ -999,7 +1001,7 @@ span> .moji3{
 }
 
     #contact {
-        margin: 30px auto 80px auto;
+        margin: 30px auto 80px 20px;
     }
 
     /* 外枠 */
@@ -1021,14 +1023,14 @@ span> .moji3{
     .contact-label {
         width: 200px;
         font-weight: bold;
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     /* 必須 */
     .contact-span {
         color: #ce2222;
         margin: 0 0 0 20px;
         font-weight: bold;
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     /* テキストボックス */
     .contact-textbox {
@@ -1041,7 +1043,7 @@ span> .moji3{
         background-color: #fafafa;
         height: 30px;
         width: 300px;
-        font-size: 3vw;
+        font-size: 3.5vw;
         margin-left: 20px;
     }
 
@@ -1055,7 +1057,7 @@ span> .moji3{
         background-color: #fafafa;
         width: 300px;
         height: 200px;
-        font-size: 3vw;
+        font-size: 3.5vw;
         margin-left: 20px;
     }
 
@@ -1074,6 +1076,8 @@ span> .moji3{
 
     #noti{
         font-size: 3vw;
+        margin-left: 20px;
+        width: 80%;
     }
 
 
